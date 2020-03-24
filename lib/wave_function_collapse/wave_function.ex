@@ -1,7 +1,7 @@
 defmodule WaveFunction do
   defstruct coefficients: [[]], weights: %{}
 
-  def shannon_entropy(self, {x, y}, sums) do
+  def shannon_entropy(self, {x, y}) do
     {sum_of_weights, sum_of_logged_weights} =
       Enum.at(self.coefficients, y)
       |> Enum.at(x)

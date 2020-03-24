@@ -11,6 +11,6 @@ defmodule WaveFunctionTest do
   end
 
   test "calculates correct entropy value", %{wave_function: wave_function} do
-    assert WaveFunction.shannon_entropy(wave_function, {0, 1}, {0,0}) == 0.992281974852574
+    assert WaveFunction.shannon_entropy(wave_function, {0, 1}) == 0.992281974852574
   end
 end
